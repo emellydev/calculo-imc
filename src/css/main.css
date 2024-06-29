@@ -23,30 +23,29 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
-  align-items: center;
 }
 
-.container {
+.container-main {
   display: flex;
   flex-flow: column;
   width: 500px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
 }
 
-.container h1 {
+.container-main h1 {
   padding: 10px;
   text-align: center;
 }
 
-.container h2 {
+.container-main h2 {
   font-size: 1.2em;
   padding: 8px 0px;
 }
 
-.container p {
+.container-main p {
   margin: 5px;
 }
 

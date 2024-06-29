@@ -3,41 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculadore de IMC</title>
     <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/telasmenores.css" media="screen and (max-width: 540px)">
+    <link rel="shortcut icon" href="src/img/icon-balance.png">
   </head>
   <body>
-    <main class="container">
+    <main class="container-main">
       <h1>Calculadora de IMC</h1>
-      <article class="container-filho">
-        <h2>IMC</h2>
-        <p>
-          Menos do que 18,5 <br />
-          Entre 18,5 e 24,9 <br />
-          Entre 25 e 29,9 <br />
-          Entre 30 e 34,9 <br />
-          Entre 35 e 39,9 <br>
-          Mais do que 40
-        </p>
-
-        <h2>Resultado</h2>
-        <p>
-          Abaixo do peso <br>
-          Peso normal <br>
-          Sobrepeso <br>
-          Obesidade grau 1 <br>
-          Obesidade grau 2 <br>
-          Obesidade grau 3
-        </p>
-      </article>
+      <section class="container-section">
+        <article class="filho">
+          <h2>IMC</h2>
+          <p>
+            Menos do que 18,5 <br />
+            Entre 18,5 e 24,9 <br />
+            Entre 25 e 29,9 <br />
+            Entre 30 e 34,9 <br />
+            Entre 35 e 39,9 <br>
+            Mais do que 40
+          </p>
+        </article>
+          <article class="filho">
+            <h2>Resultado</h2>
+            <p>
+              Abaixo do peso <br>
+              Peso normal <br>
+              Sobrepeso <br>
+              Obesidade grau 1 <br>
+              Obesidade grau 2 <br>
+              Obesidade grau 3
+            </p>
+          </article>
+      </section>
 
       <form action="" class="form">
-        <label for="peso">Peso</label>
+        <label for="peso">Peso (kg)</label>
         <input type="text" id="peso" name="peso"
-        placeholder="Exemplo: 80" />
-        <label for="altura"> Altura </label>
+        placeholder="Exemplo: 80"
+        maxlength="5"
+        minlength="2"
+        required /> 
+        <label for="altura"> Altura (m)</label> 
         <input type="text" id="altura" name="altura" 
-        placeholder="Exemplo: 1.70"/>
+        placeholder="Exemplo: 1.70"
+        maxlength="4"
+        minlength="3"
+        required/> 
         <button type="submit" id="button-submit">Calcular</button>
       </form>
       <div id="Resultado"></div>

@@ -29,8 +29,8 @@ function mostrandoResultado(imc) {
 
 form.addEventListener("submit", (evento) => {
   evento.preventDefault(); // previne reload
-  const peso = parseFloat(pesoInput.value);
-  const altura = parseFloat(alturaInput.value);
+  const peso = parseFloat(pesoInput.value.replace(',','.'));
+  const altura = parseFloat(alturaInput.value.replace(',','.'));
   if (Number(peso) && Number(altura) && altura > 0) {
     const imc = calculoImc(peso, altura);
     mostrandoResultado(imc);
