@@ -7,16 +7,10 @@ body {
 .container-main {
   background-image: none;
   box-shadow: none;
-  justify-content: flex-start;
 }
 
 .container-main h1 {
   font-size: 1.7em;
+
 }
 
-@media screen and (orientation: landscape) {
-  .body,
-  .container-main {
-    height: 100%;
-  }
-}
