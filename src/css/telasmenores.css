@@ -5,26 +5,18 @@ body {
 }
 
 .container-main {
-    background-image: none;
-    box-shadow: none;
-    justify-content: flex-start;
+  background-image: none;
+  box-shadow: none;
+  justify-content: flex-start;
 }
 
 .container-main h1 {
   font-size: 1.7em;
 }
 
-@media screen and (orientation: landscape) and (max-height: 600px) and (orientation: portrait){
-    .container-main {
-        height: 100vh;
-    }
-  .container-main .filho {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .container-section {
-    display: flex;
-    flex-direction: row;
+@media screen and (orientation: landscape) {
+  .body,
+  .container-main {
+    height: 100%;
   }
 }

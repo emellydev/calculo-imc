@@ -64,11 +64,6 @@ body {
   margin: 10px 0px;
 }
 
-#Resultado {
-  font-size: 18px;
-  font-weight: 600;
-}
-
 #button-submit {
   cursor: pointer;
   display: flex;
@@ -87,3 +82,7 @@ body {
   color: white;
 }
 
+#Resultado {
+  font-size: 18px;
+  font-weight: 600;
+}
